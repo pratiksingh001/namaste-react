@@ -1,12 +1,8 @@
-const heading = React.createElement("h1",
-    {
-        // this is the place where you give attributes to your tags
-        id: 'heading',
-        id: 'heading',
-        xyz:'abc'
-    }
-    , "Hello from React")
-        
+import React from 'react'
+import ReactDOM  from 'react-dom/client'
+
+const heading = React.createElement("h1", {id:"heading"}, "This is a React Element")
+
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(heading)
